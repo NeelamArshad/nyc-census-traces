@@ -149,6 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>The boxplot above illustrates income disparities among racial groups in New York City, based on median household income data aggregated at the census tract level. Each box represents the distribution of income within a racial group, highlighting the interquartile range (the middle 50% of data), median income (horizontal line inside each box), and outliers (dots beyond the whiskers). This visualization underscores the socioeconomic inequalities between racial groups. White households tend to have higher median incomes and a wider income range compared to other groups. In contrast, Hispanic and Black households show lower median incomes and more compressed income distributions. Asian households exhibit a relatively wide spread, indicating greater income variability within that group. The data is derived from U.S. Census Bureau records and reflects the complex interplay of historical, structural, and geographic factors influencing income levels in NYC. Policymakers, researchers, and urban planners often rely on such tract-level data to inform efforts around equity, housing policy, economic opportunity, and public investment in underserved communities.</p>
 
 
 
@@ -225,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/NeelamArshad\.github\.io\/nyc-census-traces\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
